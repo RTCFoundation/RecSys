@@ -2,7 +2,7 @@
 
 ### 1. 工业推荐架构
 
-![推荐系统架构](/Users/menglingfeng/Documents/GitHub/RecSys/images/推荐系统架构.jpg)
+![推荐系统架构](https://github.com/RTCFoundation/RecSys/blob/main/images/推荐系统架构.jpg)
 
 特征服务：存放用户特征和物料特征的一个存储容器
 
@@ -16,7 +16,7 @@
 
 #### 召回服务
 
-![RecallService](/Users/menglingfeng/Documents/GitHub/RecSys/images/RecallService.jpg)
+![RecallService](https://github.com/RTCFoundation/RecSys/blob/main/images/RecallService.jpg)
 
 Recall Service对接引擎请求，拿到引擎的请求信息，基于这些信息，并行获取各路召回分支的召回结果
 
@@ -46,7 +46,7 @@ Recall Service对接引擎请求，拿到引擎的请求信息，基于这些信
 
 排序服务是一个提供各种模型训练的平台，如排序模型FM（Factorization Machine），在平台上训练后统一部署到线上以便给在线预估服务使用
 
-![SortingService](/Users/menglingfeng/Documents/GitHub/RecSys/images/SortingService.jpg)
+![SortingService](https://github.com/RTCFoundation/RecSys/blob/main/images/SortingService.jpg)
 
 1）在线排序
 
@@ -62,7 +62,7 @@ Recall Service对接引擎请求，拿到引擎的请求信息，基于这些信
 
 - 重复上面的两步，形成一个在线排序服务，该过程回随着服务的部署一直进行训练
 
-![onlinesort](/Users/menglingfeng/Documents/GitHub/RecSys/images/onlinesort.jpg)
+![onlinesort](https://github.com/RTCFoundation/RecSys/blob/main/images/onlinesort.jpg)
 
 2) 离线排序
 
@@ -76,7 +76,7 @@ Recall Service对接引擎请求，拿到引擎的请求信息，基于这些信
 
 - 上传模型到在线预估服务平台
 
-![offlinesort](/Users/menglingfeng/Documents/GitHub/RecSys/images/offlinesort.jpg)
+![offlinesort](https://github.com/RTCFoundation/RecSys/blob/main/images/offlinesort.jpg)
 
 跟在线排序不同点：训练样本的准备，离线是一次准备好所有数据
 
@@ -312,7 +312,7 @@ totfrecords(test_file_path, test_totfrecord)
 
 #### 2.4 模型开发及训练
 
-#### ![模型架构图](/Users/menglingfeng/Documents/GitHub/RecSys/images/模型架构图.jpg)
+#### ![模型架构图](https://github.com/RTCFoundation/RecSys/blob/main/images/模型架构图.jpg)
 
 ##### 2.4.1 Parameter Server
 
@@ -701,7 +701,7 @@ def valid_step(session, test_iterator, test_dic):
 1. 将用户id向量和电影id向量分别存入向量服务中
 2. 线上用户id，基于用户id取出向量，然后拿该向量取检索相似的电影id，取topK的返回候选集
 
-![RecallDemo](/Users/menglingfeng/Documents/GitHub/RecSys/images/RecallDemo.jpg)
+![RecallDemo](https://github.com/RTCFoundation/RecSys/blob/main/images/RecallDemo.jpg)
 
 
 
